@@ -5,7 +5,8 @@ function App() {
   const [data, setData] = useState({})
   const [location, setLocation] = useState('')
 
-  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=895284fb2d2c50a520ea537456963d9c`
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=imperial&appid=9e1dbb682a67912033cfaab7f09693d3
+`
 
   const searchLocation = (event) => {
     if (event.key === 'Enter') {
@@ -24,7 +25,7 @@ function App() {
           value={location}
           onChange={event => setLocation(event.target.value)}
           onKeyPress={searchLocation}
-          placeholder='Enter Location'
+          placeholder='Enter City.........'
           type="text" />
       </div>
       <div className="container">
